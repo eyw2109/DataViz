@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ericywong | DataViz</title>
+    <link rel="stylesheet" type="text/css" href="../../css/site-specific.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:100,300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- title --> 
+    <div class="title">
+      <h1><a href="../../index.html">eric y. wong</h1>
+    </div>
+
+    <!-- navibar -->
+    <div class="navibar">
+    <ul>
+      <li><a href="../about.html">about</a></li>
+      <li><a href="../projects.html">projects</a></li>
+      <li><a style="font-weight: bold" href="../assignments.html">assignments</a></li>
+    </ul>
+    </div>
+
+    <!-- assignment -->
+    <div class="boxandwhisker">
+      <h3><i>The Box-and-Whisker Plot</i></h3>
+    </div>
+
+    <div class="explanation1">
+    <p style="font-weight: normal; text-indent: 40px; line-height: 30px">Also known as the <span style="font-weight: bold">box plot</span>, <span style="font-weight: bold">box-and-whisker diagram</span>, or <span style="font-weight: bold">Tukey boxplot</span>, the Box-and-Whisker plot is a graphical method of showing the spread of data on a graph. This method was first introduced by <span style="font-weight: bold">John Tukey</span> (1915-2000) in the book <i>Exploratory Data Analysis</i> in 1977 to enourage the exploration of different ways of looking at data, and to promote new data analysis techniques. The Box-and-Whisker plot is primarily useful in revealing the central traits and variables through a <span style="font-weight: bold; color: #151515">five-number</span> summary based on the <span style="font-weight: bold; color: #151515">minimum</span>, <span style="font-weight: bold; color: #151515">first quartile</span>, <span style="font-weight: bold; color: #151515">median</span>, <span style="font-weight: bold; color: #151515">third quartile</span>, and <span style="font-weight: bold; color: #151515">maximum</span> of a data set.<br></p>
+
+    <img class="boxplot1" src="../../img/Boxplot1.gif" alt="Boxplot1" height="291.2" wdith="296"><br>
+
+    <p style="font-weight: normal; text-indent: 40px; line-height: 30px">In the image above, the median, first quartile, and third quartile, form a rectangular <span style="font-weight: bold; color: #151515">box</span>. The segment between the third quartile and maximum, and the first quartile and minimum are the <span style="font-weight: bold; color: #151515">whiskers</span>. The <span style="font-weight: bold; color: #151515">IQR</span> shows the <i style="font-weight: bold">interquartile range</i>.<br></p> 
+    <p style="font-weight: normal; text-indent: 40px; line-height: 30px">Ocassionally, there are <span style="font-weight: bold; color: #151515">outliers</span> and <span style="font-weight: bold; color: #151515">suspected outliers</span>:<br></p>
+
+    <img class="boxplot1" src="../../img/Boxplot2.gif" alt="Boxplot2" height="296" wdith="304.8"><br>
+
+    <p style="font-weight: normal; line-height: 30px"><span style="font-weight: bold; color: #151515">Outliers</span> are <i>3 times</i> or more above or below the third and first quartile respectively. <span style="font-weight: bold; color: #151515">Suspected outliers </span>are <i>half</i> that of the outlier. Similarly, the <span style="font-weight: bold; color: #151515">outer-fence</span> is <i>3 times</i> that of the IQR (3 x IQR) and the <span style="font-weight: bold; color: #151515">inner-fence</span> is <i>1.5 times</i> that of the IQR (1.5 x IQR).<br></p>
+    
+    <p class="charttitle" style="margin-left: 20%"><i><u>Here are some benefits and detriments of the Box-and-Whisker plot</u></i><br></p>
+
+    <!-- advantages and disadvantages-->
+    <p><br><br><br><div class="flex-containerB"><br><br></p>
+      <div class="flex-itemB"><p>Advantages</p>
+      <ul style="margin-left: 50px">
+        <li style="margin-bottom: 15px">Box plots can summarize large amounts of data</li>
+        <li style="margin-bottom: 15px">Box plots display the range and distribution along a number line</li>
+        <li style="margin-bottom: 15px">Box plots show outliers</li>
+        <li style="margin-bottom: 15px">Box plots can indicate a data's symmetry and skew-ness</li>
+      </ul>
+      </div>
+      <div class="flex-itemB"><p>Disadvantages</p>
+      <ul style="margin-left: 50px">
+        <li style="margin-bottom: 20px">The original data is not clearly shown</li>
+        <li style="margin-bottom: 20px">The mean cannot be identified</li>
+        <li style="margin-bottom: 20px">The mode cannot be identified</li>
+        <li style="margin-bottom: 20px">Box plots can only be used with numerical data</li>
+      </ul>
+      </div>
+    </div>  
+
+
+    <!-- concluding remarks--> 
+    <div class="explanation2">
+    <p style="font-weight: normal; line-height: 30px">Since the Box-and-Whisker plot is relatively <span style="font-weight: bold">simple</span>, it can be draw easily via paper and pencil. Below are two examples from John Tukey himself: <br></p>
+
+    <img class="boxplot3" src="../../img/Boxplot3.png" alt="Boxplot3" height="477" wdith="460.5">
+
+    <p style="font-weight: normal; text-indent: 40px; line-height: 30px">From the example above, we see that the x-axis are the data-set(s), and the y-axis is the height in feet. For the "heights of 50 states," the median height is somewhere just below 5,000ft, for the "heights of 219 volcanos," the height is in the 6,000ft range. The maximum and minimum appear to be near Wyoming and Louisana, and Tupungatito and Anak Kraktau respectively.</p>    
+    <p style="font-weight: normal; text-indent: 40px; line-height: 30px">One can also see the <i>outliers</i>, particularly in the "height of 50 states" graph. California, Colorado, Washington, and Hawaii are <i>suspected outliers</i> within the <i>inner-fence</i> near the maximum, Delware and Florida are suspected outliers near the minimum. Alaska is the lone <i>outlier</i> with a height of at least 20,000ft in the <i>outer-fence</i>. This shows that the majority of the heights of the states are between 2,000 and 11,000ft, while Alaska and many of the other suspected outliers have skewed the data.</p>
+    <p style="font-weight: normal; line-height: 30px">If you would like to learn more, <span style="font-weight: bold"><a href="http://flowingdata.com/2008/02/15/how-to-read-and-use-a-box-and-whisker-plot/">Flowing Data</span></a> has a great example of Box-and-Whisker plots using hamburgers.<br> <span style="font-size: 15px">Image sources and sources: <i>http://www.physics.csbsju.edu/stats/box2.html</i>; <i>Tukey, John. "Exploratory Data Analysis: Past, Present and Future (1977)</i></span></p>
+    </div>
+    </div>
+  </body>
+
+  <!-- footer
+  <footer>
+    <div class="footer">email: <a href="mailto:eyw2109@columbia.edu">eyw2109@columbia.edu</a></div>
+  </footer> -->
+</html>
